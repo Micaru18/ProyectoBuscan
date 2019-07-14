@@ -1,0 +1,13 @@
+package com.example.proyectobuscan;
+
+import android.support.v7.app.AppCompatActivity;
+import android.os.Bundle;
+
+public class AnimalesAdoptadosActivity extends AppCompatActivity {
+
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_animales_adoptados);
+    }
+}

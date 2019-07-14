@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RegistrarUsuarioActivity">
+
+    <Button
+        android:id="@+id/btnSubir"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="135dp"
+        android:layout_marginEnd="76dp"
+        android:layout_marginRight="76dp"
+        android:layout_marginBottom="43dp"
+        android:text="Subir Imagen"
+        app:layout_constraintBottom_toTopOf="@+id/txtIngreseNombre"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/imgUsu"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imgUsu"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginStart="84dp"
+        android:layout_marginLeft="84dp"
+        android:layout_marginTop="100dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginBottom="26dp"
+        app:layout_constraintBottom_toTopOf="@+id/txtIngreseNombre"
+        app:layout_constraintEnd_toStartOf="@+id/btnSubir"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@mipmap/ic_launcher" />
+
+    <EditText
+        android:id="@+id/txtIngreseNombre"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="460dp"
+        android:ems="10"
+        android:hint="Ingrese Nombre"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/imgUsu"
+        app:layout_constraintTop_toBottomOf="@+id/imgUsu" />
+
+    <EditText
+        android:id="@+id/txtIngreseApellido"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:ems="10"
+        android:hint="Ingreso Apellido"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/txtIngreseUsuario"
+        app:layout_constraintStart_toStartOf="@+id/txtIngreseNombre"
+        app:layout_constraintTop_toBottomOf="@+id/txtIngreseNombre" />
+
+    <EditText
+        android:id="@+id/txtIngreseClave"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="15dp"
+        android:ems="10"
+        android:hint="Ingrese Contraseña"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/txtIngreseCorreo"
+        app:layout_constraintStart_toStartOf="@+id/txtIngreseUsuario"
+        app:layout_constraintTop_toBottomOf="@+id/txtIngreseUsuario" />
+
+    <EditText
+        android:id="@+id/txtIngreseCorreo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="15dp"
+        android:ems="10"
+        android:hint="Ingrese Correo"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/txtIngreseCelular"
+        app:layout_constraintStart_toStartOf="@+id/txtIngreseClave"
+        app:layout_constraintTop_toBottomOf="@+id/txtIngreseClave" />
+
+    <EditText
+        android:id="@+id/txtIngreseCelular"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:ems="10"
+        android:hint="Ingrese Celular"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/btnRegistrarse"
+        app:layout_constraintStart_toStartOf="@+id/txtIngreseCorreo"
+        app:layout_constraintTop_toBottomOf="@+id/txtIngreseCorreo" />
+
+    <Button
+        android:id="@+id/btnRegistrarse"
+        android:layout_width="163dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="103dp"
+        android:text="REGISTRARSE"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtIngreseCelular" />
+
+    <EditText
+        android:id="@+id/txtIngreseUsuario"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="14dp"
+        android:ems="10"
+        android:hint="Ingrese Usuario"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/txtIngreseClave"
+        app:layout_constraintStart_toStartOf="@+id/txtIngreseApellido"
+        app:layout_constraintTop_toBottomOf="@+id/txtIngreseApellido" />
+</android.support.constraint.ConstraintLayout>

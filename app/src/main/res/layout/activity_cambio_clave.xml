@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CambioClaveActivity">
+
+    <EditText
+        android:id="@+id/txtIngresarC"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="99dp"
+        android:layout_marginBottom="97dp"
+        android:ems="10"
+        android:hint="Ingrese Contraseña"
+        android:inputType="textPersonName"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/txtConNueva"
+        app:layout_constraintEnd_toEndOf="@+id/txtConNueva"
+        app:layout_constraintStart_toStartOf="@+id/txtConNueva"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/txtConNueva"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="60dp"
+        android:layout_marginLeft="60dp"
+        android:layout_marginBottom="99dp"
+        android:ems="10"
+        android:hint="Ingrese Contraseña Nueva"
+        android:inputType="textPersonName"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/txtConfirmaC"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtIngresarC" />
+
+    <EditText
+        android:id="@+id/txtConfirmaC"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="52dp"
+        android:layout_marginLeft="52dp"
+        android:layout_marginBottom="122dp"
+        android:ems="10"
+        android:hint="Confirma Contraseña"
+        android:inputType="textPersonName"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/btnCambiarC"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtConNueva" />
+
+    <Button
+        android:id="@+id/btnCambiarC"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="128dp"
+        android:text="Button"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtConfirmaC"
+        tools:text="CAMBIAR CONTRASEÑA" />
+
+
+</android.support.constraint.ConstraintLayout>

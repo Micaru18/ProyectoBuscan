@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MiPerfilActivity">
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/floatButtonMe"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="44dp"
+        android:layout_marginRight="44dp"
+        android:layout_marginBottom="65dp"
+        android:clickable="true"
+        app:backgroundTint="@android:color/holo_orange_light"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnCambiarClave"
+        app:srcCompat="@drawable/patita" />
+
+    <Button
+        android:id="@+id/btnCambiarClave"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="103dp"
+        android:text="Cambiar Contraseña"
+        app:layout_constraintBottom_toTopOf="@+id/floatButtonMe"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnDonemos" />
+
+    <ImageView
+        android:id="@+id/imgFoto"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="67dp"
+        android:layout_marginLeft="67dp"
+        android:layout_marginTop="58dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginBottom="59dp"
+        app:layout_constraintBottom_toTopOf="@+id/btnRegistrarMascota"
+        app:layout_constraintEnd_toStartOf="@+id/txtNombre"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@mipmap/ic_launcher" />
+
+    <TextView
+        android:id="@+id/txtNombre"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="89dp"
+        android:layout_marginEnd="79dp"
+        android:layout_marginRight="79dp"
+        android:layout_marginBottom="144dp"
+        android:text="TextView"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/btnRegistrarMascota"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/imgFoto"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btnRegistrarMascota"
+        android:layout_width="0dp"
+        android:layout_height="78dp"
+        android:layout_marginBottom="424dp"
+        android:text="Registrar Mascota Perdida"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/btnEstadoMascota"
+        app:layout_constraintStart_toStartOf="@+id/btnEstadoMascota"
+        app:layout_constraintTop_toBottomOf="@+id/imgFoto" />
+
+    <Button
+        android:id="@+id/btnEstadoMascota"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:text=" Estado Mascota Perdida"
+        app:layout_constraintBottom_toTopOf="@+id/btnRecompensas"
+        app:layout_constraintEnd_toEndOf="@+id/btnRecompensas"
+        app:layout_constraintStart_toStartOf="@+id/btnRecompensas"
+        app:layout_constraintTop_toBottomOf="@+id/btnRegistrarMascota" />
+
+    <Button
+        android:id="@+id/btnRecompensas"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:text="Recompensas y Puntos"
+        app:layout_constraintBottom_toTopOf="@+id/btnDonemos"
+        app:layout_constraintEnd_toEndOf="@+id/btnDonemos"
+        app:layout_constraintStart_toStartOf="@+id/btnDonemos"
+        app:layout_constraintTop_toBottomOf="@+id/btnEstadoMascota" />
+
+    <Button
+        android:id="@+id/btnDonemos"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:text="¡ Donemos Amor !"
+        app:layout_constraintBottom_toTopOf="@+id/btnCambiarClave"
+        app:layout_constraintEnd_toEndOf="@+id/btnCambiarClave"
+        app:layout_constraintStart_toStartOf="@+id/btnCambiarClave"
+        app:layout_constraintTop_toBottomOf="@+id/btnRecompensas" />
+</android.support.constraint.ConstraintLayout>
